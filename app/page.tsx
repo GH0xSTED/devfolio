@@ -15,7 +15,7 @@ export default function Home() {
       <div className="flex flex-row">
         <TooltipProvider>
           <Tooltip>
-            <TooltipTrigger></TooltipTrigger>
+            <TooltipTrigger>Hi</TooltipTrigger>
             <TooltipContent>
               <h3>Click for special message</h3>
             </TooltipContent>
