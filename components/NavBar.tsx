@@ -12,6 +12,8 @@ import {
 import { ModeToggle } from "./ModeToggle";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import meta from "@/images/brands/meta.svg";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -54,72 +56,80 @@ const components: { title: string; href: string; description: string }[] = [
 function NavBar() {
   return (
     <div className="flex flex-1 flex-row items-center justify-between p-3  w-screen max-h-14">
-      <h1>
-        Jason Levy
-        <span className="ml-1 italic text-blue dark:text-gray-500 text-xs">
-          | Portfolio
-        </span>
-      </h1>
-      <NavigationMenu>
-        <NavigationMenuList>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>Skills</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                <li className="row-span-3">
-                  <NavigationMenuLink asChild>
-                    <a
-                      className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                      href="/"
-                    >
-                      <div className="h-6 w-6 bg-pink-400" />
-                      <div className="mb-2 mt-4 text-lg font-medium">
-                        Front-End Development
-                      </div>
-                      <p className="text-sm leading-tight text-muted-foreground">
-                        Course Completed 10/2023 | Certificate issued by{" "}
-                        <span className="text-blue-500 font-bold">Meta</span>
-                      </p>
-                    </a>
-                  </NavigationMenuLink>
-                </li>
-                <ListItem href="/docs" title="TypeScript">
-                  Re-usable components built using Radix UI and Tailwind CSS.
-                </ListItem>
-                <ListItem href="/docs/installation" title="ReactJS">
-                  How to install dependencies and structure your app.
-                </ListItem>
-                <ListItem href="/docs/primitives/typography" title="Python">
-                  Styles for headings, paragraphs, lists...etc
-                </ListItem>
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>Demos</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                {components.map((component) => (
-                  <ListItem
-                    key={component.title}
-                    title={component.title}
-                    href={component.href}
-                  >
-                    {component.description}
+      <div className="flex items-center justify-start space-x-10">
+        <h1 className="font-bold">
+          Jason Levy
+          <span className="ml-1 italic font-medium text-blue dark:text-gray-500 text-xs">
+            | Portfolio
+          </span>
+        </h1>
+        <NavigationMenu>
+          <NavigationMenuList>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Skills</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                  <li className="row-span-3">
+                    <NavigationMenuLink asChild>
+                      <a
+                        className="cursor-pointer flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                        href="https://coursera.org/verify/professional-cert/569HH9XH6ZB5"
+                      >
+                        <Image
+                          src={meta}
+                          alt="meta logo"
+                          height="100"
+                          width="200"
+                          className="h-auto w-28"
+                        />
+                        <div className="mb-2 mt-4 text-lg font-medium">
+                          Front-End Development
+                        </div>
+                        <p className="text-sm leading-tight text-muted-foreground">
+                          Course Completed 10/2023 | Certificate issued by{" "}
+                          <span className="text-blue-500 font-bold">Meta</span>
+                        </p>
+                      </a>
+                    </NavigationMenuLink>
+                  </li>
+                  <ListItem href="/docs" title="TypeScript">
+                    Re-usable components built using Radix UI and Tailwind CSS.
                   </ListItem>
-                ))}
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <Link href="/about" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                About
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem>
-        </NavigationMenuList>
-      </NavigationMenu>
+                  <ListItem href="/docs/installation" title="ReactJS">
+                    How to install dependencies and structure your app.
+                  </ListItem>
+                  <ListItem href="/docs/primitives/typography" title="Python">
+                    Styles for headings, paragraphs, lists...etc
+                  </ListItem>
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Demos</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                  {components.map((component) => (
+                    <ListItem
+                      key={component.title}
+                      title={component.title}
+                      href={component.href}
+                    >
+                      {component.description}
+                    </ListItem>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Link href="/about" legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  About
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
+      </div>
       <ModeToggle />
     </div>
   );
