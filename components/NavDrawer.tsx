@@ -15,6 +15,7 @@ import { DropdownMenuIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import MetaCert from "./MetaCert";
 import GoogleCert from "./GoogleCert";
 import DemoCarousel from "./DemoCarousel";
+import Link from "next/link";
 
 function NavDrawer() {
   return (
@@ -26,16 +27,22 @@ function NavDrawer() {
         <DrawerContent className="flex justify-center items-center">
           <DrawerHeader>
             <DrawerTitle>Navigation Menu</DrawerTitle>
-            <DrawerDescription>
+            <DrawerDescription className="-mb-5">
               Select a link or scroll through demos below.
             </DrawerDescription>
           </DrawerHeader>
           <DrawerFooter>
             <div className="flex flex-col justify-center items-center">
               <div className="flex flex-row justify-center items-center space-x-2 p-2">
-                <Button variant="outline">Home</Button>
-                <Button variant="outline">About</Button>
-                <Button variant="outline">LinkedIn</Button>
+                <Link href="/">
+                  <Button variant="outline">Home</Button>
+                </Link>
+                <Link href="/about">
+                  <Button variant="outline">About</Button>
+                </Link>
+                <Link href="https://linkedin.com/in/jasonrosslevy">
+                  <Button variant="outline">LinkedIn</Button>
+                </Link>
               </div>
               <div className="flex flex-1 flex-col justify-center items-center border-2 border-black rounded-xl p-2">
                 <h1 className="font-bold text-sm my-2">Certificates</h1>
@@ -52,10 +59,14 @@ function NavDrawer() {
                   </Card>
                 </div>
               </div>
-              <DemoCarousel />
-              <section />
+              <div className="flex flex-col justify-center items-center my-3">
+                <h1 className="font-bold text-xs">
+                  Navigate demos by scrolling left/right. Tap to view.
+                </h1>
+                <DemoCarousel />
+              </div>
               <DrawerClose>
-                <Button variant="destructive">Cancel</Button>
+                <Button variant="destructive">Close</Button>
               </DrawerClose>
             </div>
           </DrawerFooter>

@@ -19,10 +19,10 @@ function DemoCarousel() {
     <div>
       <Carousel
         opts={{ align: "start", loop: true }}
-        className="w-full max-w-sm md:max-w-5xl lg:max-w-7xl my-2"
+        className="w-full max-w-[18rem] md:max-w-5xl lg:max-w-7xl my-2"
       >
         <CarouselContent>
-          <CarouselItem key={1} className="basis-1/2 md:basis-1/3 lg:basis-3/5">
+          <CarouselItem key={1} className="basis-2/3 md:basis-1/3 lg:basis-3/5">
             <DemoCard
               title="LanguaChat"
               url="https://langua.chat"
@@ -30,7 +30,7 @@ function DemoCarousel() {
               img={languaChat}
             />
           </CarouselItem>
-          <CarouselItem key={2} className="basis-1/2 md:basis-1/3 lg:basis-3/5">
+          <CarouselItem key={2} className="basis-2/3 md:basis-1/3 lg:basis-3/5">
             <DemoCard
               title="Trello Clone"
               url="https://jrello.vercel.app/"
@@ -38,7 +38,7 @@ function DemoCarousel() {
               img={trelloClone}
             />
           </CarouselItem>
-          <CarouselItem key={3} className="basis-1/2 md:basis-1/3 lg:basis-3/5">
+          <CarouselItem key={3} className="basis-2/3 md:basis-1/3 lg:basis-3/5">
             <DemoCard
               title="Netflix Clone"
               url="https://hyperghost.media/"
@@ -46,23 +46,23 @@ function DemoCarousel() {
               img={netflixClone}
             />
           </CarouselItem>
-          <CarouselItem key={4} className="basis-1/2 md:basis-1/3 lg:basis-3/5">
+          <CarouselItem key={4} className="basis-2/3 md:basis-1/3 lg:basis-3/5">
             <DemoCard
-              title="Chat GPT Clone"
+              title="ChatGPT Clone"
               url="https://ghostgpt.vercel.app/"
               desc="OpenAI API, Firebase, Next.js & Tailwind"
               img={gptClone}
             />
           </CarouselItem>
-          <CarouselItem key={5} className="basis-1/2 md:basis-1/3 lg:basis-3/5">
+          <CarouselItem key={5} className="basis-2/3 md:basis-1/3 lg:basis-3/5">
             <DemoCard
-              title="Little Lemon Cafe"
+              title="Little Lemon"
               url="https://littlelemoncafe.vercel.app/"
               desc="Meta Front-End Developer Capstone Project"
               img={littleLemon}
             />
           </CarouselItem>
-          <CarouselItem key={6} className="basis-1/2 md:basis-1/3 lg:basis-3/5">
+          <CarouselItem key={6} className="basis-2/3 md:basis-1/3 lg:basis-3/5">
             <DemoCard
               title="NFT Marketplace"
               url="https://ghostdrop.vercel.app/"

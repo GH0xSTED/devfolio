@@ -23,7 +23,9 @@ export default function Home() {
           </Tooltip>
         </TooltipProvider>
       </div>
-      <DemoCarousel />
+      <div className="hidden sm:flex">
+        <DemoCarousel />
+      </div>
     </main>
   );
 }
