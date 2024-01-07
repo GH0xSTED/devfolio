@@ -18,7 +18,7 @@ function DemoCarousel() {
   return (
     <div>
       <Carousel
-        opts={{ align: "start", loop: "true" }}
+        opts={{ align: "start", loop: true }}
         className="w-full max-w-sm md:max-w-5xl lg:max-w-7xl my-2"
       >
         <CarouselContent>
