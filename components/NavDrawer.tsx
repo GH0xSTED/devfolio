@@ -9,20 +9,12 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
-import languaChat from "@/images/demogifs/languachat.gif";
 import { Button } from "./ui/button";
 import { DropdownMenuIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import MetaCert from "./MetaCert";
 import GoogleCert from "./GoogleCert";
-import Image from "next/image";
+import DemoCarousel from "./DemoCarousel";
 
 function NavDrawer() {
   return (
@@ -60,77 +52,7 @@ function NavDrawer() {
                   </Card>
                 </div>
               </div>
-              <Carousel
-                opts={{ align: "start", loop: "true" }}
-                className="w-full max-w-sm my-2"
-              >
-                <CarouselContent>
-                  <CarouselItem key={1} className="basis-1/2 md:basis-1/3">
-                    <div className="p-1">
-                      <a href="https://langua.chat">
-                        <Card>
-                          <div className="flex flex-col justify-center items-center py-1">
-                            <h1 className="font-bold text-sm">LanguaChat</h1>
-                            <h2 className="font-thin text-xs">
-                              AI Language Translator
-                            </h2>
-                          </div>
-                          <CardContent className="flex aspect-square items-center justify-center p-1 rounded-md">
-                            <Image
-                              src={languaChat}
-                              alt="Langua Chat"
-                              width="300"
-                              height="300"
-                              className="rounded-md"
-                            />
-                          </CardContent>
-                        </Card>
-                      </a>
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem key={2} className="basis-1/2 md:basis-1/3">
-                    <div className="p-1">
-                      <Card>
-                        <CardContent className="flex aspect-square items-center justify-center p-6">
-                          <span className="text-3xl font-semibold">Demos</span>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem key={3} className="basis-1/2 md:basis-1/3">
-                    <div className="p-1">
-                      <Card>
-                        <CardContent className="flex aspect-square items-center justify-center p-6">
-                          <span className="text-3xl font-semibold">About</span>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem key={4} className="basis-1/2 md:basis-1/3">
-                    <div className="p-1">
-                      <Card>
-                        <CardContent className="flex aspect-square items-center justify-center p-6">
-                          <span className="text-3xl font-semibold">More</span>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem key={5} className="basis-1/2 md:basis-1/3">
-                    <div className="p-1">
-                      <Card>
-                        <CardContent className="flex aspect-square items-center justify-center p-6">
-                          <span className="text-3xl font-semibold">
-                            Still More
-                          </span>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </CarouselItem>
-                </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
-              </Carousel>
-
+              <DemoCarousel />
               <section />
               <DrawerClose>
                 <Button variant="destructive">Cancel</Button>

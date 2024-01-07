@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/tooltip";
 import NavBar from "@/components/NavBar";
 import { toast } from "sonner";
+import DemoCarousel from "@/components/DemoCarousel";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
           </Tooltip>
         </TooltipProvider>
       </div>
+      <DemoCarousel />
     </main>
   );
 }
