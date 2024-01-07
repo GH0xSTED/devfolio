@@ -13,7 +13,9 @@ import {
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import meta from "@/images/brands/meta.svg";
+
+import MetaCert from "./MetaCert";
+import GoogleCert from "./GoogleCert";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -62,37 +64,37 @@ function NavMenu() {
             <NavigationMenuTrigger>Skills</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                <li className="row-span-3">
+                <li className="row-span-3 p-3 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground rounded-xl">
                   <NavigationMenuLink asChild>
-                    <a
-                      className="cursor-pointer flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                      href="https://coursera.org/verify/professional-cert/569HH9XH6ZB5"
-                    >
-                      <Image
-                        src={meta}
-                        alt="meta logo"
-                        height="100"
-                        width="200"
-                        className="h-auto w-28"
-                      />
-                      <div className="mb-2 mt-4 text-lg font-medium">
-                        Front-End Development
-                      </div>
-                      <p className="text-sm leading-tight text-muted-foreground">
-                        Course Completed 10/2023 | Certificate issued by{" "}
-                        <span className="text-blue-500 font-bold">Meta</span>
-                      </p>
-                    </a>
+                    <MetaCert />
                   </NavigationMenuLink>
                 </li>
-                <ListItem href="/docs" title="TypeScript">
-                  Re-usable components built using Radix UI and Tailwind CSS.
+                <li className="row-span-3 p-3 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground rounded-xl">
+                  <NavigationMenuLink asChild>
+                    <GoogleCert />
+                  </NavigationMenuLink>
+                </li>
+                <ListItem href="/" title="TailwindCSS">
+                  Utility-first CSS framework
                 </ListItem>
-                <ListItem href="/docs/installation" title="ReactJS">
-                  How to install dependencies and structure your app.
+                <ListItem
+                  href="https://coursera.org/share/c38bda64867e6bb68dff49de6fc26fcd"
+                  title="ReactJS"
+                >
+                  Create robust and reusable components with advanced
+                  techniques.
                 </ListItem>
-                <ListItem href="/docs/primitives/typography" title="Python">
-                  Styles for headings, paragraphs, lists...etc
+                <ListItem
+                  href="https://coursera.org/share/2d3402b0c576c0cf97d949b232f72ca6"
+                  title="UX/UI"
+                >
+                  Fundamentals of User Experience design and research.
+                </ListItem>
+                <ListItem
+                  href="https://coursera.org/share/70383823dab208e4d52677c929274c99"
+                  title="Python"
+                >
+                  Foundational programming skills with basic Python Syntax.
                 </ListItem>
               </ul>
             </NavigationMenuContent>
