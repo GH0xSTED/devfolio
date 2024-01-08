@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import React from "react";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
+import NavBar from "@/components/NavBar";
 
 import { cn } from "@/lib/utils";
 
@@ -27,7 +29,7 @@ export default function RootLayout({
       <head />
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen w-screen overflow-hidden bg-background font-sans antialiased",
           fontSans.variable
         )}
       >
@@ -37,6 +39,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <NavBar />
           {children}
           <Toaster richColors position="top-center" />
         </ThemeProvider>

@@ -5,14 +5,14 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import NavBar from "@/components/NavBar";
+
 import { toast } from "sonner";
 import DemoCarousel from "@/components/DemoCarousel";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="flex flex-1 min-h-screen w-screen flex-col items-center">
-      <NavBar />
       <div className="flex flex-row">
         <TooltipProvider>
           <Tooltip>
@@ -21,7 +21,7 @@ export default function Home() {
                 toast.message("🍞 Don't you love toast? Thanks for visiting!")
               }
             >
-              Hi
+              <h1 className="font-bold">Hi.</h1>
             </TooltipTrigger>
             <TooltipContent>
               <h3>Click for special message</h3>
@@ -30,13 +30,25 @@ export default function Home() {
         </TooltipProvider>
       </div>
       <div className="p-5 max-w-4xl lg:max-w-5xl flex flex-col justify-center items-center space-y-2">
-        <p>My name is Jason, welcome to my developer portfolio!</p>
         <p>
-          I am a Full-Stack Devloper {"(with an emphasis on Front-End) "} and
-          would absolutely love to work with you. Please use the menu to
-          navigate this site and check out some of my demos and certifications.
-          I hope you enjoy what you see here, and feel free to reach out to me
-          if you would like to work together!
+          My name is{" "}
+          <Link href="/about">
+            <span className="text-blue-600 font-bold active:scale-90 transition-all duration-150 ease-in">
+              Jason
+            </span>
+          </Link>
+          , welcome to my developer portfolio!
+        </p>
+        <p className="text-sm">
+          I am a Full-Stack Devloper {"(with an emphasis on Front-End) "}.
+          Please use the menu to navigate this site and check out some of my
+          demos and certifications. Feel free to{" "}
+          <a href="mailto:jasonrosslevy@gmail.com">
+            <span className="text-blue-500 font-bold active:scale-90 transition-all duration-150 ease-in">
+              contact me
+            </span>
+          </a>{" "}
+          if you would like to know more!
         </p>
       </div>
       <div className="hidden sm:flex sm:flex-col sm:justify-center sm:items-center sm:mt-5">

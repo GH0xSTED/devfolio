@@ -24,13 +24,7 @@ function DemoCard({
           </div>
           <CardContent className="flex aspect-square items-center justify-center p-1 rounded-md">
             <div className="relative w-full h-full lg:m-3 flex justify-center items-center">
-              <Image
-                src={img}
-                alt={title}
-                layout="fit"
-                objectFit="contain"
-                className="rounded-md"
-              />
+              <Image src={img} alt={title} className="rounded-md" />
             </div>
           </CardContent>
         </Card>

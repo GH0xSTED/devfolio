@@ -35,20 +35,24 @@ function NavDrawer() {
             <div className="flex flex-col justify-center items-center">
               <div className="flex flex-row justify-center items-center space-x-2 p-2">
                 <Link href="/">
-                  <Button
-                    variant="outline"
-                    className="bg-blue-700 dark:bg-slate-600 text-white dark:text-black"
-                  >
-                    Home
-                  </Button>
+                  <DrawerClose>
+                    <Button
+                      variant="outline"
+                      className="bg-blue-700 dark:bg-slate-600 text-white dark:text-black"
+                    >
+                      Home
+                    </Button>
+                  </DrawerClose>
                 </Link>
                 <Link href="/about">
-                  <Button
-                    variant="outline"
-                    className="bg-blue-700 dark:bg-slate-600 text-white dark:text-black"
-                  >
-                    About
-                  </Button>
+                  <DrawerClose>
+                    <Button
+                      variant="outline"
+                      className="bg-blue-700 dark:bg-slate-600 text-white dark:text-black"
+                    >
+                      About
+                    </Button>
+                  </DrawerClose>
                 </Link>
                 <Link href="https://linkedin.com/in/jasonrosslevy">
                   <Button
