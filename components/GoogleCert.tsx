@@ -1,11 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import google from "@/images/brands/google.svg";
+import Link from "next/link";
 
 function GoogleCert() {
   return (
-    <a
-      className=""
+    <Link
+      className="py-1"
       href="https://coursera.org/share/7b87ac62dcd878792ba44bb3615d7664"
     >
       <Image
@@ -13,13 +14,15 @@ function GoogleCert() {
         alt="google logo"
         height="100"
         width="200"
-        className="h-auto w-20"
+        className="h-auto w-16"
       />
-      <div className="mb-1 mt-3 text-base font-medium">
-        Google Cybersecurity
-      </div>
-      <p className="text-sm leading-tight text-muted-foreground">
-        Course Completed 8/2023 | Certificate issued by{" "}
+      <div className="my-1 text-sm font-medium">Google Cybersecurity</div>
+      <p className="text-xs leading-tight text-muted-foreground">
+        Completed 8/2023
+      </p>
+      <p className="text-xs leading-tight text-muted-foreground">
+        {" "}
+        Certificate issued by{" "}
         <span className="font-bold">
           <span className="text-blue-500">G</span>
           <span className="text-red-600">o</span>
@@ -29,7 +32,7 @@ function GoogleCert() {
           <span className="text-red-600">e</span>
         </span>
       </p>
-    </a>
+    </Link>
   );
 }
 

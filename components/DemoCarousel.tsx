@@ -7,11 +7,11 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import languaChat from "@/images/demogifs/languachat.gif";
-import netflixClone from "@/images/demogifs/jayflixdemo.png";
-import gptClone from "@/images/demogifs/gptdemo.png";
-import trelloClone from "@/images/demogifs/trellodemo.png";
-import nftDemo from "@/images/demogifs/nftdemo.png";
-import littleLemon from "@/images/demogifs/littlelemondemo.png";
+import netflixClone from "@/images/demogifs/JFlixDemo.gif";
+import gptClone from "@/images/demogifs/GPTDemo.gif";
+import trelloClone from "@/images/demogifs/TrelloDemoGIF.gif";
+import nftDemo from "@/images/demogifs/NFTMarketDemo.gif";
+import littleLemon from "@/images/demogifs/LittleLemonDemo.gif";
 import DemoCard from "./DemoCard";
 
 function DemoCarousel() {
@@ -41,7 +41,7 @@ function DemoCarousel() {
           <CarouselItem key={3} className="basis-2/3 md:basis-1/3 lg:basis-3/5">
             <DemoCard
               title="Netflix Clone"
-              url="https://hyperghost.media/"
+              url="https://jason.vision/"
               desc="MongoDB, Prisma, ReactJS, TMDB API, Google Auth"
               img={netflixClone}
             />

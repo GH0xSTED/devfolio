@@ -24,7 +24,7 @@ function NavDrawer() {
         <DrawerTrigger>
           <HamburgerMenuIcon />
         </DrawerTrigger>
-        <DrawerContent className="flex justify-center items-center">
+        <DrawerContent className="flex justify-center items-center dark:bg-[rgb(15,15,15)]">
           <DrawerHeader>
             <DrawerTitle>Navigation Menu</DrawerTitle>
             <DrawerDescription className="-mb-5">
@@ -35,32 +35,49 @@ function NavDrawer() {
             <div className="flex flex-col justify-center items-center">
               <div className="flex flex-row justify-center items-center space-x-2 p-2">
                 <Link href="/">
-                  <Button variant="outline">Home</Button>
+                  <Button
+                    variant="outline"
+                    className="bg-blue-700 dark:bg-slate-600 text-white dark:text-black"
+                  >
+                    Home
+                  </Button>
                 </Link>
                 <Link href="/about">
-                  <Button variant="outline">About</Button>
+                  <Button
+                    variant="outline"
+                    className="bg-blue-700 dark:bg-slate-600 text-white dark:text-black"
+                  >
+                    About
+                  </Button>
                 </Link>
                 <Link href="https://linkedin.com/in/jasonrosslevy">
-                  <Button variant="outline">LinkedIn</Button>
+                  <Button
+                    variant="outline"
+                    className="bg-blue-700 dark:bg-slate-600 text-white dark:text-black"
+                  >
+                    LinkedIn
+                  </Button>
                 </Link>
               </div>
-              <div className="flex flex-1 flex-col justify-center items-center border-2 border-black rounded-xl p-2">
-                <h1 className="font-bold text-sm my-2">Certificates</h1>
+              <div className="flex flex-1 flex-col justify-center items-center border-2 border-black rounded-xl p-2 mt-2">
+                <h1 className="font-bold text-sm mb-1 text-muted-foreground">
+                  Certificates
+                </h1>
                 <div className="flex flex-1 justify-center items-center space-x-2 mb-2">
-                  <Card className="flex h-full w-full m-1 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground rounded-xl basis-1/2">
-                    <CardContent className="flex aspect-square items-center justify-center p-2">
+                  <Card className="flex h-full w-full m-1 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground rounded-xl">
+                    <CardContent className="flex items-center justify-center p-2">
                       <MetaCert />
                     </CardContent>
                   </Card>
-                  <Card className="flex h-full w-full m-1 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground rounded-xl basis-1/2">
-                    <CardContent className="flex aspect-square items-center justify-center p-2">
+                  <Card className="flex h-full w-full m-1 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground rounded-xl">
+                    <CardContent className="flex items-center justify-center p-2">
                       <GoogleCert />
                     </CardContent>
                   </Card>
                 </div>
               </div>
               <div className="flex flex-col justify-center items-center my-3">
-                <h1 className="font-bold text-xs">
+                <h1 className="font-bold text-xs text-muted-foreground">
                   Navigate demos by scrolling left/right. Tap to view.
                 </h1>
                 <DemoCarousel />
