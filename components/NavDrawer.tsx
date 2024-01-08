@@ -14,7 +14,7 @@ import { Button } from "./ui/button";
 import { DropdownMenuIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import MetaCert from "./MetaCert";
 import GoogleCert from "./GoogleCert";
-import DemoCarousel from "./DemoCarousel";
+import DemoCarousel from "./SkillCarousel";
 import Link from "next/link";
 
 function NavDrawer() {
@@ -82,7 +82,7 @@ function NavDrawer() {
               </div>
               <div className="flex flex-col justify-center items-center my-3">
                 <h1 className="font-bold text-xs text-muted-foreground">
-                  Navigate demos by scrolling left/right. Tap to view.
+                  Navigate skills by scrolling left/right. Tap to view.
                 </h1>
                 <DemoCarousel />
               </div>

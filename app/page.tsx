@@ -9,6 +9,7 @@ import {
 import { toast } from "sonner";
 import DemoCarousel from "@/components/DemoCarousel";
 import Link from "next/link";
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
@@ -51,10 +52,12 @@ export default function Home() {
           if you would like to know more!
         </p>
       </div>
+      <Separator className="max-w-sm lg:max-w-7xl" />
       <div className="flex flex-col justify-center items-center mt-5">
-        <h2 className="text-muted-foreground p-10">
-          Use the left/right buttons or click and drag to navigate demos. Click
-          on a card to view.
+        <h1 className="font-bold">Demos</h1>
+        <h2 className="text-muted-foreground py-5 px-10 text-xs sm:text-base">
+          Use the left/right buttons or grab and scroll to navigate demos.
+          Click/Tap on a card to view.
         </h2>
         <DemoCarousel />
       </div>

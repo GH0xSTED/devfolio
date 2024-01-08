@@ -54,7 +54,7 @@ function DemoCarousel() {
               img={gptClone}
             />
           </CarouselItem>
-          <CarouselItem key={5} className="basis-2/3 md:basis-1/3 lg:basis-3/5">
+          <CarouselItem key={5} className="basis-4/5 md:basis-1/3 lg:basis-3/5">
             <DemoCard
               title="Little Lemon"
               url="https://littlelemoncafe.vercel.app/"
