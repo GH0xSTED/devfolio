@@ -68,12 +68,12 @@ function NavDrawer() {
                   Certificates
                 </h1>
                 <div className="flex flex-1 justify-center items-center space-x-2 mb-2">
-                  <Card className="flex h-full w-full m-1 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground rounded-xl">
+                  <Card className="flex h-32 sm:h-full w-full m-1 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground rounded-xl">
                     <CardContent className="flex items-center justify-center p-2">
                       <MetaCert />
                     </CardContent>
                   </Card>
-                  <Card className="flex h-full w-full m-1 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground rounded-xl">
+                  <Card className="flex h-32 sm:h-full w-full m-1 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground rounded-xl">
                     <CardContent className="flex items-center justify-center p-2">
                       <GoogleCert />
                     </CardContent>

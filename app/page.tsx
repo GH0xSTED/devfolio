@@ -51,10 +51,10 @@ export default function Home() {
           if you would like to know more!
         </p>
       </div>
-      <div className="hidden sm:flex sm:flex-col sm:justify-center sm:items-center sm:mt-5">
-        <h2 className="text-muted-foreground">
+      <div className="flex flex-col justify-center items-center mt-5">
+        <h2 className="text-muted-foreground p-10">
           Use the left/right buttons or click and drag to navigate demos. Click
-          on a card to view!
+          on a card to view.
         </h2>
         <DemoCarousel />
       </div>

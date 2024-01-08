@@ -9,7 +9,7 @@ function About() {
         <h1 className="font-bold text-lg">Hi, I am Jason.</h1>
         <p>
           A highly adaptable, fun and creative multimedia wizard turned tech
-          enthusiast!
+          enthusiast.
         </p>
         <p>
           I have been learning how to become a Full-Stack Developer over the
@@ -25,7 +25,7 @@ function About() {
           shadcn-UI components such as the cards, carousels, buttons and
           light/dark mode toggle. There are a few Easter Eggs around as well! I
           hope you enjoy what you see here, and feel free to reach out to me if
-          you would like to work together!
+          you would like to work together.
         </p>
         <Link href="/">
           <h1 className="text-blue-500 font-bold active:scale-90 transition-all duration-150 ease-in">

@@ -22,7 +22,7 @@ function DemoCarousel() {
         className="w-full max-w-[18rem] md:max-w-5xl lg:max-w-7xl my-2"
       >
         <CarouselContent>
-          <CarouselItem key={1} className="basis-2/3 md:basis-1/3 lg:basis-3/5">
+          <CarouselItem key={1} className="basis-4/5 md:basis-1/3 lg:basis-3/5">
             <DemoCard
               title="LanguaChat"
               url="https://langua.chat"
@@ -30,7 +30,7 @@ function DemoCarousel() {
               img={languaChat}
             />
           </CarouselItem>
-          <CarouselItem key={2} className="basis-2/3 md:basis-1/3 lg:basis-3/5">
+          <CarouselItem key={2} className="basis-4/5 md:basis-1/3 lg:basis-3/5">
             <DemoCard
               title="Trello Clone"
               url="https://jrello.vercel.app/"
@@ -38,7 +38,7 @@ function DemoCarousel() {
               img={trelloClone}
             />
           </CarouselItem>
-          <CarouselItem key={3} className="basis-2/3 md:basis-1/3 lg:basis-3/5">
+          <CarouselItem key={3} className="basis-4/5 md:basis-1/3 lg:basis-3/5">
             <DemoCard
               title="Netflix Clone"
               url="https://jason.vision/"
@@ -46,7 +46,7 @@ function DemoCarousel() {
               img={netflixClone}
             />
           </CarouselItem>
-          <CarouselItem key={4} className="basis-2/3 md:basis-1/3 lg:basis-3/5">
+          <CarouselItem key={4} className="basis-4/5 md:basis-1/3 lg:basis-3/5">
             <DemoCard
               title="ChatGPT Clone"
               url="https://ghostgpt.vercel.app/"
@@ -62,7 +62,7 @@ function DemoCarousel() {
               img={littleLemon}
             />
           </CarouselItem>
-          <CarouselItem key={6} className="basis-2/3 md:basis-1/3 lg:basis-3/5">
+          <CarouselItem key={6} className="basis-4/5 md:basis-1/3 lg:basis-3/5">
             <DemoCard
               title="NFT Marketplace"
               url="https://ghostdrop.vercel.app/"
