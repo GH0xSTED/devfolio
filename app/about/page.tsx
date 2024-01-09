@@ -6,7 +6,7 @@ function About() {
   return (
     <div className="flex flex-1 justify-center items-center w-screen max-h-screen p-5 lg:max-w-7xl mx-auto">
       <div className="flex flex-col justify-center items-center space-y-5">
-        <h1 className="font-bold text-lg">Hi, I am Jason.</h1>
+        <h1 className="font-bold text-lg">{"I'm Jason!"}</h1>
         <p>
           A highly adaptable, fun and creative multimedia wizard turned tech
           enthusiast.

@@ -14,7 +14,7 @@ import { Button } from "./ui/button";
 import { DropdownMenuIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import MetaCert from "./MetaCert";
 import GoogleCert from "./GoogleCert";
-import DemoCarousel from "./SkillCarousel";
+import SkillCarousel from "./SkillCarousel";
 import Link from "next/link";
 
 function NavDrawer() {
@@ -25,10 +25,10 @@ function NavDrawer() {
           <HamburgerMenuIcon />
         </DrawerTrigger>
         <DrawerContent className="flex justify-center items-center dark:bg-[rgb(15,15,15)]">
-          <DrawerHeader>
+          <DrawerHeader className="flex flex-col justify-center items-center">
             <DrawerTitle>Navigation Menu</DrawerTitle>
             <DrawerDescription className="-mb-5">
-              Select a link or scroll through demos below.
+              Select a link.
             </DrawerDescription>
           </DrawerHeader>
           <DrawerFooter>
@@ -38,7 +38,7 @@ function NavDrawer() {
                   <DrawerClose>
                     <Button
                       variant="outline"
-                      className="bg-blue-700 dark:bg-slate-600 text-white dark:text-black"
+                      className="bg-blue-700 dark:bg-slate-600 text-white"
                     >
                       Home
                     </Button>
@@ -48,7 +48,7 @@ function NavDrawer() {
                   <DrawerClose>
                     <Button
                       variant="outline"
-                      className="bg-blue-700 dark:bg-slate-600 text-white dark:text-black"
+                      className="bg-blue-700 dark:bg-slate-600 text-white"
                     >
                       About
                     </Button>
@@ -57,7 +57,7 @@ function NavDrawer() {
                 <Link href="https://linkedin.com/in/jasonrosslevy">
                   <Button
                     variant="outline"
-                    className="bg-blue-700 dark:bg-slate-600 text-white dark:text-black"
+                    className="bg-blue-700 dark:bg-slate-600 text-white"
                   >
                     LinkedIn
                   </Button>
@@ -65,11 +65,11 @@ function NavDrawer() {
               </div>
               <div className="flex flex-1 flex-col justify-center items-center border-2 border-black rounded-xl p-2 mt-2">
                 <h1 className="font-bold text-sm mb-1 text-muted-foreground">
-                  Certificates
+                  Click a Certification to View
                 </h1>
                 <div className="flex flex-1 justify-center items-center space-x-2 mb-2">
                   <Card className="flex h-32 sm:h-full w-full m-1 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground rounded-xl">
-                    <CardContent className="flex items-center justify-center p-2">
+                    <CardContent className="flex items-center justify-center p-2 lg:py-5">
                       <MetaCert />
                     </CardContent>
                   </Card>
@@ -82,9 +82,9 @@ function NavDrawer() {
               </div>
               <div className="flex flex-col justify-center items-center my-3">
                 <h1 className="font-bold text-xs text-muted-foreground">
-                  Navigate skills by scrolling left/right. Tap to view.
+                  Navigate skills by scrolling left/right
                 </h1>
-                <DemoCarousel />
+                <SkillCarousel />
               </div>
               <DrawerClose>
                 <Button variant="destructive">Close</Button>

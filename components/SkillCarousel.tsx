@@ -20,7 +20,7 @@ function SkillCarousel() {
           {skills.map((skill) => (
             <CarouselItem
               key={skill.title + skill.subtitle}
-              className="basis-4/5 md:basis-1/3 lg:basis-3/5"
+              className="basis-4/5 md:basis-1/4 lg:basis-1/5"
             >
               <SkillCard
                 title={skill.title}

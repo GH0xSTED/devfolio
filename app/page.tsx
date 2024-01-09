@@ -22,7 +22,7 @@ export default function Home() {
                 toast.message("🍞 Don't you love toast? Thanks for visiting!")
               }
             >
-              <h1 className="font-bold">Hi.</h1>
+              <h1 className="font-bold">Hi!</h1>
             </TooltipTrigger>
             <TooltipContent>
               <h3>Click for special message</h3>

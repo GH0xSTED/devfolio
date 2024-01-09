@@ -74,27 +74,29 @@ function NavMenu() {
                     <GoogleCert />
                   </NavigationMenuLink>
                 </li>
-                <ListItem href="/" title="TailwindCSS">
-                  Utility-first CSS framework
-                </ListItem>
                 <ListItem
                   href="https://coursera.org/share/c38bda64867e6bb68dff49de6fc26fcd"
-                  title="ReactJS"
+                  title="Front-End"
                 >
-                  Create robust and reusable components with advanced
-                  techniques.
+                  Next.js, Vue, ReactJS, React Native, Remix
+                </ListItem>
+                <ListItem
+                  href="https://coursera.org/share/70383823dab208e4d52677c929274c99"
+                  title="Back-End"
+                >
+                  Python, Django, Firebase, MongoDB, postgreSQL, AWS, Node.js
                 </ListItem>
                 <ListItem
                   href="https://coursera.org/share/2d3402b0c576c0cf97d949b232f72ca6"
                   title="UX/UI"
                 >
-                  Fundamentals of User Experience design and research.
+                  TailwindCSS, Figma, shadcn, Headless, Daisy, Chakra, Bootstrap
                 </ListItem>
-                <ListItem
-                  href="https://coursera.org/share/70383823dab208e4d52677c929274c99"
-                  title="Python"
-                >
-                  Foundational programming skills with basic Python Syntax.
+                <ListItem href="/" title="Utility">
+                  VS Code, Github, npm, GPT{" "}
+                </ListItem>
+                <ListItem href="/" title="Multimedia">
+                  Photoshop, Premiere Pro, DaVinci Resolve, After Effects
                 </ListItem>
               </ul>
             </NavigationMenuContent>
