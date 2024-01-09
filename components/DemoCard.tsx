@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { Skeleton } from "./ui/skeleton";
 
 function DemoCard({
   img,
@@ -14,6 +15,22 @@ function DemoCard({
   desc: string;
   url: string;
 }) {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Set a delay (e.g., 2 seconds)
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    // Clear timeout if component unmounts
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleLoad = () => {
+    setIsLoading(false);
+  };
+
   return (
     <div className="p-1">
       <Link href={url} prefetch={false}>
@@ -24,7 +41,22 @@ function DemoCard({
           </div>
           <CardContent className="flex aspect-square items-center justify-center p-1 rounded-md">
             <div className="relative w-full h-full lg:m-3 flex justify-center items-center">
-              <Image src={img} alt={title} className="rounded-md" />
+              {isLoading ? (
+                <div className="flex items-center flex-row space-x-4">
+                  <Skeleton className="h-12 w-12 rounded-full" />
+                  <Skeleton className="h-12 w-12" />
+                  <Skeleton className="h-12 w-24" />
+                </div>
+              ) : (
+                <Image
+                  src={img}
+                  alt={title}
+                  width={800}
+                  height={800}
+                  className="rounded-md"
+                  onLoadingComplete={handleLoad}
+                />
+              )}
             </div>
           </CardContent>
         </Card>
