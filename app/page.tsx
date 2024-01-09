@@ -41,9 +41,9 @@ export default function Home() {
           , welcome to my developer portfolio!
         </p>
         <p className="text-sm">
-          I am a Full-Stack Devloper {"(with an emphasis on Front-End) "}.
-          Please use the menu to navigate this site and check out some of my
-          demos and certifications. Feel free to{" "}
+          {
+            "As a business graduate who embraced the tech world, I bring a unique blend of business insight and self-taught technical skills to web development. My journey in coding began out of curiosity and quickly grew into a passion for creating user-friendly, impactful web solutions. Leveraging my business background, I approach development with a strategic mindset, focusing on delivering websites that not only look great but also drive tangible results."
+          }
           <a href="mailto:jasonrosslevy@gmail.com">
             <span className="text-blue-500 font-bold active:scale-90 transition-all duration-150 ease-in">
               contact me

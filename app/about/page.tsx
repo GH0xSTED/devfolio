@@ -6,26 +6,20 @@ function About() {
   return (
     <div className="flex flex-1 justify-center items-center w-screen max-h-screen p-5 lg:max-w-7xl mx-auto">
       <div className="flex flex-col justify-center items-center space-y-5">
-        <h1 className="font-bold text-lg">{"I'm Jason!"}</h1>
+        <h1 className="font-bold text-lg">
+          {
+            "Hello, I'm Jason--a multimedia wizard with a newfound passion for technology."
+          }
+        </h1>
         <p>
-          A highly adaptable, fun and creative multimedia wizard turned tech
-          enthusiast.
+          {
+            "Over the last two years, I've dedicated myself to mastering Full-Stack Development, aiming for a career shift into the tech industry. My skill set includes a wide array of languages, frameworks, and databases, including ReactJS, Next.js, Vue, Python, SQL, Django, various UI frameworks, Firebase, MongoDB, and much more."
+          }
         </p>
         <p>
-          I have been learning how to become a Full-Stack Developer over the
-          span of the past 2 years, and am looking to career-switch into the
-          world of tech. Languages, frameworks, and databases I have been
-          committed to learn include: ReactJS, Next.js, Vue, Python, SQL,
-          Django, TailwindCSS, DaisyUI, ChakraUI, TailwindUI, shadcn-UI,
-          Firebase, MongoDB, Sanity.io, Appwrite, AWS, and believe it or not,
-          more!
-        </p>
-        <p>
-          The site your are on uses Next.js with TailwindCSS, as well as
-          shadcn-UI components such as the cards, carousels, buttons and
-          light/dark mode toggle. There are a few Easter Eggs around as well! I
-          hope you enjoy what you see here, and feel free to reach out to me if
-          you would like to work together.
+          {
+            "You're currently experiencing my skills in action on this site, which is built with Next.js and TailwindCSS, and features shadcn-UI components for a dynamic interface. Don't miss the Easter Eggs I've hidden around! If my work interests you, I'd love to discuss potential collaborations."
+          }
         </p>
         <Link href="/">
           <h1 className="text-blue-500 font-bold active:scale-90 transition-all duration-150 ease-in">

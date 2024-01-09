@@ -18,13 +18,7 @@ function DemoCard({
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Set a delay (e.g., 2 seconds)
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
-
-    // Clear timeout if component unmounts
-    return () => clearTimeout(timer);
+    setIsLoading(false);
   }, []);
 
   const handleLoad = () => {
