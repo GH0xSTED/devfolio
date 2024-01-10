@@ -5,6 +5,8 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import NavBar from "@/components/NavBar";
+import Head from "next/head";
+import HGIcon from "@/images/brands/hg-purplegrad.svg";
 
 import { cn } from "@/lib/utils";
 
@@ -26,7 +28,25 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head />
+      <Head>
+        <title>Jason Levy - Full-Stack Developer Portfolio</title>
+        <meta
+          property="og:title"
+          content="Jason Levy - Full-Stack Developer Portfolio"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={HGIcon} />
+        <meta property="og:url" content="https://j13.dev" />
+        <meta
+          property="og:description"
+          content="Discover the portfolio of Jason Levy, a multimedia wizard turned Full-Stack Developer."
+        />
+        <meta
+          property="og:site_name"
+          content="Jason Levy Developer Portfolio"
+        />
+        <meta property="og:locale" content="en_US" />
+      </Head>
       <body
         className={cn(
           "min-h-screen w-screen overflow-hidden bg-background font-sans antialiased",
