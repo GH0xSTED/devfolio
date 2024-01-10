@@ -16,9 +16,28 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "Jason Levy Developer Portfolio",
+  title: {
+    template: "%s | Jason Levy Developer Portfolio",
+    default: "Jason Levy Developer Portfolio",
+  },
   description:
     "Welcome to a portfolio of my ever-expanding software devleopment portfolio! Thanks for taking the time to view my work, please reach out if interested in working with me.",
+  openGraph: {
+    title: "Jason Levy - Full-Stack Developer Portfolio",
+    description:
+      "Discover the portfolio of Jason Levy, a multimedia wizard turned Full-Stack Developer.",
+    url: "https://j13.dev",
+    siteName: "J13.dev",
+    images: [
+      {
+        url: "https://www.j13.dev/_next/static/media/hg-purplegrad.a91d6445.svg", // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -28,25 +47,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head>
-        <title>Jason Levy - Full-Stack Developer Portfolio</title>
-        <meta
-          property="og:title"
-          content="Jason Levy - Full-Stack Developer Portfolio"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content={HGIcon} />
-        <meta property="og:url" content="https://j13.dev" />
-        <meta
-          property="og:description"
-          content="Discover the portfolio of Jason Levy, a multimedia wizard turned Full-Stack Developer."
-        />
-        <meta
-          property="og:site_name"
-          content="Jason Levy Developer Portfolio"
-        />
-        <meta property="og:locale" content="en_US" />
-      </Head>
+      <head />
       <body
         className={cn(
           "min-h-screen w-screen overflow-hidden bg-background font-sans antialiased",
