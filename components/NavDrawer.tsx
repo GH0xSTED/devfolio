@@ -36,31 +36,22 @@ function NavDrawer() {
               <div className="flex flex-row justify-center items-center space-x-2 p-2">
                 <Link href="/">
                   <DrawerClose>
-                    <Button
-                      variant="outline"
-                      className="bg-blue-700 dark:bg-slate-600 text-white"
-                    >
+                    <div className="bg-blue-700 py-1.5 px-3.5 rounded-md dark:bg-slate-600 text-white font-bold">
                       Home
-                    </Button>
+                    </div>
                   </DrawerClose>
                 </Link>
                 <Link href="/about">
                   <DrawerClose>
-                    <Button
-                      variant="outline"
-                      className="bg-blue-700 dark:bg-slate-600 text-white"
-                    >
+                    <div className="bg-blue-700 py-1.5 px-3.5 rounded-md dark:bg-slate-600 text-white font-bold">
                       About
-                    </Button>
+                    </div>
                   </DrawerClose>
                 </Link>
                 <Link href="https://linkedin.com/in/jasonrosslevy">
-                  <Button
-                    variant="outline"
-                    className="bg-blue-700 dark:bg-slate-600 text-white"
-                  >
+                  <div className="bg-blue-700 py-1.5 px-3.5 rounded-md dark:bg-slate-600 text-white font-bold">
                     LinkedIn
-                  </Button>
+                  </div>
                 </Link>
               </div>
               <div className="flex flex-1 flex-col justify-center items-center border-2 border-black rounded-xl p-2 mt-2">
