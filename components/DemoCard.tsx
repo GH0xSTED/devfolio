@@ -48,7 +48,7 @@ function DemoCard({
                   width={800}
                   height={800}
                   className="rounded-md"
-                  onLoadingComplete={handleLoad}
+                  onLoad={handleLoad}
                 />
               )}
             </div>
