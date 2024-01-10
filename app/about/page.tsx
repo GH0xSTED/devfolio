@@ -28,7 +28,7 @@ function About() {
         </Link>
         <div className="flex flex-row space-x-2 items-center">
           <Link href="tel:424-237-7127">
-            <Badge className="bg-black active:scale-90 transition-all duration-150 ease-in">
+            <Badge className="bg-black dark:bg-neutral-300 active:scale-90 transition-all duration-150 ease-in">
               Phone
             </Badge>
           </Link>
