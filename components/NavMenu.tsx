@@ -16,6 +16,7 @@ import Image from "next/image";
 
 import MetaCert from "./MetaCert";
 import GoogleCert from "./GoogleCert";
+import MetaCertBack from "./MetaCertBack";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -67,6 +68,11 @@ function NavMenu() {
                 <li className="row-span-3 p-3 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground rounded-xl">
                   <NavigationMenuLink asChild>
                     <MetaCert />
+                  </NavigationMenuLink>
+                </li>
+                <li className="row-span-3 p-3 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground rounded-xl">
+                  <NavigationMenuLink asChild>
+                    <MetaCertBack />
                   </NavigationMenuLink>
                 </li>
                 <li className="row-span-3 p-3 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground rounded-xl">

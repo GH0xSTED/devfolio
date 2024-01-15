@@ -50,7 +50,7 @@ export default function RootLayout({
       <head />
       <body
         className={cn(
-          "min-h-screen w-screen overflow-hidden bg-background font-sans antialiased",
+          "min-h-screen w-screen overflow-y-auto overflow-x-hidden bg-background font-sans antialiased",
           fontSans.variable
         )}
       >
