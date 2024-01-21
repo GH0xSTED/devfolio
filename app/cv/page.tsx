@@ -279,34 +279,46 @@ function page() {
             </ul>
           </SkillCard>
           <SkillCard title="LANGUAGES">
-            <h1>{"English: Native"}</h1>
-            <h1>{"Spanish: Limited (Intermediate)"}</h1>
+            <h1>{"English: Native (Fluent)"}</h1>
+            <h1>{"Spanish: Some (Intermediate)"}</h1>
           </SkillCard>
           <SkillCard title="WEBSITES, PORTFOLIOS, PROFILES">
-            <a
-              href="https://www.j13.dev"
-              className="hover:text-blue-500 transition-all duration-150 ease-in font-semibold"
-            >
-              Software Developer Portfolio
-            </a>
-            <a
-              href="https://www.jason.vision"
-              className="hover:text-blue-500 transition-all duration-150 ease-in font-semibold"
-            >
-              Digital Media Portfolio
-            </a>
-            <a
-              href="https://www.linkedin.com/in/jasonrosslevy"
-              className="hover:text-blue-500 transition-all duration-150 ease-in font-semibold"
-            >
-              LinkedIn Profile
-            </a>
-            <a
-              href="https://www.jason.vision/movies/JRL-2024-Cinemareel_sm.mp4"
-              className="hover:text-blue-500 transition-all duration-150 ease-in font-semibold"
-            >
-              Editing Demo Reel
-            </a>
+            <ul className="space-y-2">
+              <li>
+                <a
+                  href="https://www.j13.dev"
+                  className="hover:text-blue-500 transition-all duration-150 ease-in font-semibold"
+                >
+                  Software Developer Portfolio
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.jason.vision"
+                  className="hover:text-blue-500 transition-all duration-150 ease-in font-semibold"
+                >
+                  Digital Media Portfolio
+                </a>
+              </li>
+            </ul>
+            <ul className="space-y-2">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/jasonrosslevy"
+                  className="hover:text-blue-500 transition-all duration-150 ease-in font-semibold"
+                >
+                  LinkedIn Profile
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.jason.vision/movies/JRL-2024-Cinemareel_sm.mp4"
+                  className="hover:text-blue-500 transition-all duration-150 ease-in font-semibold"
+                >
+                  Cinematography Demo Reel
+                </a>
+              </li>
+            </ul>
           </SkillCard>
           <h1 className="text-xs pt-10">
             Please reach out using the contact methods above if you would like
