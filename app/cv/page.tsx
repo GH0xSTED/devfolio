@@ -37,7 +37,7 @@ function page() {
         <div className="lg:col-span-2">
           <div className="flex flex-col justify-start mt-4 md:mt-10 space-y-4 md:space-y-10">
             <div>
-              <h1 className="font-extrabold text-lg md:text-2xl uppercase">
+              <h1 className="font-extrabold text-base md:text-2xl uppercase">
                 Summary
               </h1>
               <p className="md:text-sm text-xs">
@@ -46,7 +46,7 @@ function page() {
             </div>
 
             <div>
-              <h1 className="font-extrabold text-lg md:text-2xl uppercase -mb-3">
+              <h1 className="font-extrabold text-base md:text-2xl uppercase -mb-3">
                 Experience
               </h1>
               <div>
@@ -172,7 +172,7 @@ function page() {
             </div>
 
             <div>
-              <h1 className="font-extrabold text-lg md:text-2xl uppercase">
+              <h1 className="font-extrabold text-base md:text-2xl uppercase">
                 Education
               </h1>
               <div>
