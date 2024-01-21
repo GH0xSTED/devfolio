@@ -8,7 +8,7 @@ import SkillCard from "./SkillCard";
 function page() {
   return (
     <div className="flex flex-1 flex-col justify-center mx-auto rounded-md w-screen max-w-7xl p-8 md:p-20 bg-none">
-      <div className="grid grid-cols-1 gap-1 sm:gap-4 lg:grid-cols-3 lg:gap-8">
+      <div className="grid grid-cols-1 gap-0 sm:gap-4 lg:grid-cols-3 lg:gap-8">
         <div className="lg:col-span-2">
           <h1 className="font-black text-xl md:text-5xl">JASON ROSS LEVY</h1>
           <h2 className="font-bold text-sm md:text-base">
@@ -33,9 +33,9 @@ function page() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
+      <div className="grid grid-cols-1 gap-1 sm:gap-4 lg:grid-cols-3 lg:gap-8">
         <div className="lg:col-span-2">
-          <div className="flex flex-col justify-start mt-10 space-y-10">
+          <div className="flex flex-col justify-start mt-4 md:mt-10 space-y-4 md:space-y-10">
             <div>
               <h1 className="font-extrabold text-lg md:text-2xl uppercase">
                 Summary
@@ -182,6 +182,7 @@ function page() {
                 <h2 className="italic sm:text-base text-xs">
                   Dual Concentration: Mgmt Information Systems & Marketing
                 </h2>
+                <div className="w-full rounded-xl bg-neutral-500 h-[1px] mt-0.5 shadow" />
                 <h1 className="font-semibold sm:text-base text-sm">
                   University at Albany - State University of New York
                 </h1>

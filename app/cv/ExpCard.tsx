@@ -18,7 +18,7 @@ function ExpCard({
   children,
 }: ExpCardProps) {
   return (
-    <div className="flex flex-col justify-start mt-5">
+    <div className="flex flex-col justify-start mt-3 md:mt-5">
       <div className="flex flex-col md:flex-row lg:space-x-2 font-bold text-sm md:text-lg">
         <h2 className="font-black">{title}</h2>
         <h2 className="hidden md:inline">/</h2>
