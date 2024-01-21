@@ -41,7 +41,7 @@ function page() {
                 Summary
               </h1>
               <p className="md:text-sm text-xs">
-                {`Experienced professional with a solid foundation in cybersecurity, complemented by extensive roles in media production and management. Drawing from this unique blend of technical and non-technical backgrounds, I am passionately transitioning to software development and/or project management. Equipped with a deep understanding of tech intricacies from my cybersecurity days and a wealth of insights from diverse industries, I'm eager to contribute to a collaborative tech and commerce-driven environment. Committed to innovation and excellence, I am ready to bring a multifaceted perspective to tackle complex challenges.`}
+                {`Experienced professional with a solid foundation in cybersecurity, complemented by extensive roles in media production and management. Drawing from this unique blend of technical and non-technical backgrounds, I am passionately transitioning to software development and/or project management. Committed to innovation and excellence, I am ready to bring a multifaceted perspective to tackle complex challenges.`}
               </p>
             </div>
 
