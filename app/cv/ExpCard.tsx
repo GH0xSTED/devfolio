@@ -6,7 +6,7 @@ interface ExpCardProps {
   location: string;
   from: string;
   to: string;
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 function ExpCard({
@@ -18,21 +18,21 @@ function ExpCard({
   children,
 }: ExpCardProps) {
   return (
-    <div className="flex flex-col justify-start mb-5">
-      <div className="flex flex-row space-x-2 font-bold text-lg">
-        <h2>{title}</h2>
-        <h2>/</h2>
-        <h2>{company}</h2>
-        <h2>/</h2>
-        <h3 className="italic">{location}</h3>
+    <div className="flex flex-col justify-start mt-5">
+      <div className="flex flex-col md:flex-row lg:space-x-2 font-bold text-sm md:text-lg">
+        <h2 className="font-black">{title}</h2>
+        <h2 className="hidden md:inline">/</h2>
+        <h2 className="font-semibold">{company}</h2>
+        <h2 className="hidden md:inline">/</h2>
+        <h3 className="italic font-light text-sm">{location}</h3>
       </div>
       <span className="flex items-center -translate-y-2 space-x-6">
-        <span className="h-px flex-1 bg-black"></span>
+        <span className="h-px flex-1 bg-black dark:bg-neutral-500"></span>
         <h1 className="text-xs font-bold -translate-y-3">
           {from} - {to}
         </h1>
       </span>
-      <ul className="list-disc list-inside text-sm flex flex-col">
+      <ul className="[list-style-type:square] list-inside text-xs md:text-sm flex flex-col indent-text space-y-1">
         {children}
       </ul>
     </div>
