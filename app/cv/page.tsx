@@ -4,6 +4,7 @@ import meta from "../../images/brands/meta.svg";
 import google from "../../images/brands/google.svg";
 import Image from "next/image";
 import SkillCard from "./SkillCard";
+import SocialBar from "./SocialBar";
 
 function page() {
   return (
@@ -15,22 +16,21 @@ function page() {
             Sr Media Production Specialist / Jr Developer
           </h2>
         </div>
-        <div className="flex flex-row justify-start items-center sm:flex-col sm:items-start">
-          <p className="md:mt-3 italic text-xs sm:text-base sm:ml-2">
-            Los Angeles, CA
-          </p>
+        <div className="flex justify-start flex-col items-start">
+          <p className="md:mt-3 italic text-xs sm:text-base">Los Angeles, CA</p>
           <div className="flex flex-row justify-start items-center">
-            <a href="tel:+14242377127">
-              <div className="bg-none p-1 rounded-md mr-1 hover:bg-neutral-400/80 hover:scale-110 transition-all duration-150 ease-in-out">
-                📱
-              </div>
-            </a>
             <a href="mailto:jasonrosslevy@gmail.com">
-              <h2 className="font-semibold text-sm sm:text-base hover:text-blue-400 transition-colors duration-150">
+              <h2 className="font-semibold text-xs sm:text-base hover:text-blue-400 transition-colors duration-150">
                 jasonrosslevy@gmail.com
               </h2>
             </a>
+            <a href="tel:+14242377127">
+              <div className="bg-none rounded-md mr-1 hover:bg-neutral-400/80 hover:scale-110 transition-all duration-150 ease-in-out">
+                📱
+              </div>
+            </a>
           </div>
+          <SocialBar />
         </div>
       </div>
       <div className="grid grid-cols-1 gap-1 sm:gap-4 lg:grid-cols-3 lg:gap-8">
